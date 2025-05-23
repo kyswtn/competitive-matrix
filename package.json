@@ -1,0 +1,12 @@
+{
+  "name": "competitive-matrix",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}

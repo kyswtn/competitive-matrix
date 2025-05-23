@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Competitive Matrix on Payment SDKs</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./index.ts"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <table id="graph">
+      <thead>
+        <tr>
+          <th><!-- empty corner --></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <!-- initially hide ASIDE as it contains JS rendered elements -->
+  <aside style="display: none">
+    <h2>Visualising Payment SDKs</h2>
+    <h3>& their retention and attriction rates</h3>
+    <p>Here is a tiny little website that visualises on a sample dataset of apps and their payment SDKs, what are the
+      retention and attriction rates for each provider is.</p>
+    <p>Choose from these providers to filter out the SDKs to compare.</p>
+    <section id="sdks"></section>
+    <p>Check this if you just want to see normalized values (by row).</p>
+    <section id="normal-toggle"></section>
+    <p>Select an SDK to see example apps that use it. Some SDKs have no example apps.</p>
+    <br />
+    <section id="apps"></section>
+  </aside>
+</body>
+
+</html>

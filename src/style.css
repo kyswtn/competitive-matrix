@@ -1,176 +1,176 @@
 body,
 td {
-	margin: 0;
-	padding: 0;
-	font-size: 18px;
-	font-family: "Geist Mono", monospace;
-	font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Geist Mono", monospace;
+  font-weight: normal;
 }
 
 body {
-	width: 100%;
-	height: 100%;
-	min-height: 100svh;
-	display: flex;
-	flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-	display: grid;
-	place-items: center;
-	border-right: 2px dashed #dcdcdc;
-	padding: 128px 0 32px 0;
+  display: grid;
+  place-items: center;
+  border-right: 2px dashed #dcdcdc;
+  padding: 128px 0 32px 0;
 }
 
 table {
-	--cell-width: 80px;
+  --cell-width: 80px;
 
-	/* shift so that labels don't take any width and the grid is centered */
-	margin-left: calc(-1 * var(--cell-width));
-	margin-top: calc(-1 * var(--cell-width));
-	border-collapse: collapse;
+  /* shift so that labels don't take any width and the grid is centered */
+  margin-left: calc(-1 * var(--cell-width));
+  margin-top: calc(-1 * var(--cell-width));
+  border-collapse: collapse;
 }
 
 thead th {
-	transform: rotate(-45deg);
-	overflow: visible;
-	width: calc(2 * var(--cell-width));
+  transform: rotate(-45deg);
+  overflow: visible;
+  width: calc(2 * var(--cell-width));
 }
 
 td {
-	border: 1px solid #dcdcdc;
-	overflow: hidden;
+  border: 1px solid #dcdcdc;
+  overflow: hidden;
 }
 
 th,
 td {
-	width: var(--cell-width);
-	max-width: var(--cell-width);
-	height: var(--cell-width);
-	max-height: var(--cell-width);
-	text-align: center;
-	vertical-align: middle;
-	position: relative;
-	font-size: 16px;
+  width: var(--cell-width);
+  max-width: var(--cell-width);
+  height: var(--cell-width);
+  max-height: var(--cell-width);
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  font-size: 16px;
 
-	cursor: pointer;
-	touch-action: manipulation;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 section#sdks {
-	display: flex;
-	flex-direction: column row;
-	flex-wrap: wrap;
-	gap: 8px;
-	padding: 4px 0;
+  display: flex;
+  flex-direction: column row;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 4px 0;
 }
 
 .sdk {
-	display: block;
-	border: 2px solid #dcdcdc;
-	padding: 4px 8px;
-	cursor: pointer;
-	touch-action: manipulation;
+  display: block;
+  border: 2px solid #dcdcdc;
+  padding: 4px 8px;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 .sdk:has(input:checked) {
-	border: 2px solid blue;
+  border: 2px solid blue;
 }
 
 aside {
-	font-size: 18px;
-	padding: 16px;
+  font-size: 18px;
+  padding: 16px;
 }
 
 h2,
 h3 {
-	color: gray;
-	margin: 0;
+  color: gray;
+  margin: 0;
 }
 
 h2 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 h3 {
-	font-size: 22px;
+  font-size: 22px;
 }
 
 section#apps h3 {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .app {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 16px;
-	margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .app img {
-	width: 60px;
-	height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .app data div:nth-child(2) {
-	color: gray;
+  color: gray;
 }
 
 section#normal-toggle label {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 6px;
-	cursor: pointer;
-	touch-action: manipulation;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 section#normal-toggle input {
-	display: grid;
-	place-content: center;
-	appearance: none;
+  display: grid;
+  place-content: center;
+  appearance: none;
 
-	width: 1.25em;
-	height: 1.25em;
-	border: 0.15em solid currentColor;
-	transform: translateY(-0.075em);
+  width: 1.25em;
+  height: 1.25em;
+  border: 0.15em solid currentColor;
+  transform: translateY(-0.075em);
 }
 
 section#normal-toggle input::before {
-	content: "";
-	width: 0.65em;
-	height: 0.65em;
-	transform: scale(0);
-	box-shadow: inset 1em 1em blue;
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  box-shadow: inset 1em 1em blue;
 }
 
 section#normal-toggle input:checked::before {
-	transform: scale(1);
+  transform: scale(1);
 }
 
 @media (width >= 64rem) {
-	body {
-		flex-direction: row;
-	}
+  body {
+    flex-direction: row;
+  }
 
-	main {
-		padding: 0;
-		flex: 2;
-	}
+  main {
+    padding: 0;
+    flex: 2;
+  }
 
-	aside {
-		flex: 1;
-	}
+  aside {
+    flex: 1;
+  }
 
-	aside {
-		padding: 48px 56px 32px 48px;
-	}
+  aside {
+    padding: 48px 56px 32px 48px;
+  }
 
-	main {
-		position: sticky;
-		top: 0;
-		left: 0;
-		height: 100svh;
-	}
+  main {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100svh;
+  }
 }
